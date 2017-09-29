@@ -1,0 +1,10 @@
+---
+title: "An open science approach to modeling and visualizing cyanobacteria blooms in lakes and ponds"
+author: "Jeffrey W. Hollister, Farnaz Nojavan, Betty J. Kreakie"
+date: "November 2, 2016"
+output: pdf_document
+---
+
+It is expected that cyanobacteria blooms will increase in frequency, duration, and severity as inputs of nutrients increase and the impacts of climate change are realized.  Partly in response to this, federal, state, and local entities have ramped up efforts to better understand blooms which has resulted in new life for old datasets, new monitoring programs, and novel uses for non-traditional sources of data.  To fully benefit from these datasets, it is also imperative that the full body of work including data, code, and manuscripts be openly available (i.e., open science).  This presentation will provide several examples of our work which occurs at the intersection of open science and research on cyanobacetria blooms in lakes and ponds.  In particular we will discuss 1) why open science is particularly important for environmental human health issues;  2)  the `lakemorpho` and `elevatr` R packages and how we use those to model lake morphometry; 3) Shiny server applications to visualize data collected as part of the Cyanobacteria Monitoring Collaborative; and 4) distribution of our research and models via open access publications and as R packages on GitHub.      
+
+

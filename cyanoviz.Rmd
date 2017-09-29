@@ -1,0 +1,137 @@
+---
+title: "New England Cyanobacteria 2014 Data Explorer"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    social: menu
+runtime: shiny
+---
+
+<!-- Learn more about flexdashboard at https://rstudio.github.io/flexdashboard -->
+
+
+```{r setup, include=FALSE}
+# Load packages and initialize data here
+library(flexdashboard)
+library(ggplot2)
+#library(plotly)
+library(dplyr)
+#library(maps)
+#library(rgdal)
+#library(sp)
+library(shiny)
+library(lubridate)
+library(leaflet)
+
+# Clean up the 2014 data
+dat<-read.csv("Data2014.csv",stringsAsFactors = FALSE)%>%
+  filter(SampleLocation != "Other" ||
+           SampleLocation != "Calibration" ||
+           SampleLocation != "Blank") %>%
+  filter(!Flag) %>%
+  filter(Fluorometer == "Beagle")%>%
+  filter(Units=="ug/l")%>%
+  filter(!is.na(Longitude))%>%
+  filter(!is.na(Latitude))%>%
+  filter(Frozen,!Filtered)
+
+#Combine Dates
+dat$date_sampled <- ymd(paste(dat$SampleYear,dat$SampleMonth,dat$SampleDay,sep="-"))
+dat$geo_id <- as.numeric(factor(paste(dat$Longitude,dat$Latitude)))
+dat$geo_date_samp_id <- paste(dat$geo_id,dat$date_sampled,dat$SampleLocation,sep=":")
+dat <- dat%>%
+  arrange(geo_date_samp_id) %>%
+  select(geo_date_samp_id,date_sampled,State,Parameter,Value,Longitude,Latitude) %>%
+  filter(!is.na(Value))
+
+dat_chla <- dat %>%
+  filter(Parameter == "Chlorophyll")
+
+dat_phyco <- dat %>%
+  filter(Parameter == "Phycocyanin")
+
+dat_final <- full_join(dat_phyco,dat_chla,by="geo_date_samp_id") %>%
+  select(ID=geo_date_samp_id,State=State.x,Date=date_sampled.x,Chlorophyll=Value.y,Phycocyanin=Value.x,Long=Longitude.x,Lat=Latitude.x)%>%
+  na.omit()
+
+dat_final$Date <- paste(dat_final$Date)
+
+# Reactive that returns the whole dataset if there is no brush
+selectedData <- reactive({
+  data <- brushedPoints(dat_final, input$plot1_brush)
+  if (nrow(data) == 0){
+    data <- list(data = dat_final,sel = nrow(data))
+  } else {
+    data <- list(data = data,sel = nrow(data))
+  }
+  data
+})
+```
+
+Column
+-----------------------------------------------------------------------
+
+### Chlorophyll *a* and Phycocyanin Scatterplot
+
+*drag to select points*
+
+```{r}
+plotOutput("plot1", brush = brushOpts(id = "plot1_brush"))
+output$plot1 <- renderPlot({
+  if(selectedData()$sel == 0){
+  m <- ggplot(dat_final, aes(x = Chlorophyll, y = Phycocyanin)) + 
+    geom_point() +
+    scale_x_log10() +
+    scale_y_log10()
+  } else {
+    m <- ggplot(dat_final, aes(x = Chlorophyll, y = Phycocyanin)) + 
+    geom_point() +
+    geom_point(data=selectedData()$data,color = "yellow",aes(x = Chlorophyll, y = Phycocyanin)) +
+    scale_x_log10() +
+    scale_y_log10()
+  }
+  #ggplotly(m)
+  m
+})
+
+```
+
+### Data
+
+```{r}
+renderTable({
+  selectedData()$data[,1:5]
+})
+```
+
+Column
+-----------------------------------------------------------------------
+
+### 2014 Sampling Locations
+
+```{r}
+#Leaflet Map
+
+renderLeaflet({
+  popup_text <- paste("State: ", dat_final$State, "<br/>",
+                    "Chl: ", dat_final$Chlorophyll, "<br/>",
+                    "Phyco: ", dat_final$Phycocyanin, "<br/>",
+                    "Date: ", dat_final$Date,
+                    sep="")
+  popup_text_sel <- paste("State: ", selectedData()$data$State, "<br/>",
+                    "Chl: ", selectedData()$data$Chlorophyll, "<br/>",
+                    "Phyco: ", selectedData()$data$Phycocyanin, "<br/>",
+                    "Date: ", selectedData()$data$Date,
+                    sep="")
+  if(selectedData()$sel == 0){
+      leaflet(data = dat_final) %>%
+        addTiles() %>%
+        addCircleMarkers(~Long,~Lat,radius = 5,popup=popup_text)
+} else {
+      leaflet(data = dat_final) %>%
+        addTiles() %>%
+        addCircleMarkers(~Long,~Lat,radius = 5,popup=popup_text) %>%
+        addCircleMarkers(~Long,~Lat,data = selectedData()$data, color = "yellow", radius = 8,popup=popup_text_sel)
+}
+})
+```
