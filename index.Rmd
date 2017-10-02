@@ -405,6 +405,7 @@ class: middle, center, inverse
     - [Pre-print]()
     - [Open Access]()
 
+---
 # Thanks!
 .center[
 ## Jeff Hollister
