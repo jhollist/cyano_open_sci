@@ -392,7 +392,7 @@ class: middle, center, inverse
 - But ...]
 
 .right-column[
-<img src="figure/prob_map_ecosphere.jpg", style="width: 120%; margin-top: 50px;"></img>
+<img src="figure/prob_map_ecosphere.jpg", style="width: 180%; margin-top: 50px;"></img>
 ]
 
 ---
