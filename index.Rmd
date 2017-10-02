@@ -308,7 +308,6 @@ background-image: url("figure/shiny.jpg")
 # [Shiny: Demo](https://cyanos.shinyapps.io/cyanoviz/)
 
 
-
 ---
 class: middle, center, inverse
 
@@ -365,16 +364,15 @@ class: middle, center, inverse
 
 # Models and field research
 
-- Trophic state and chlorophyll **a**
-    - Random forest
-    - Heirarchical Bayes
+- Random forest models of trophic state and chlorophyll **a**
+- Re-thinking the Lake Trophic State Index
 - Chlorophyll *a* and microcystin
 - Temporal and spatial dynamics of cyanobacteria blooms
 - New work
     - Lake photic zone temperature
     - Phytoplankton community analysis
 
-<img src="https://media.giphy.com/media/qJsJI0MhazjGw/giphy.gif" style="width: 80%; height: 80%; margin-left: 10%;"></img>
+<img src="https://media.giphy.com/media/qJsJI0MhazjGw/giphy.gif" style="width: 70%; height: 70%; margin-left: 10%;"></img>
 
 ---
 
@@ -409,15 +407,47 @@ class: middle, center, inverse
 
 ---
 
-# Heirarchical models of trophic State and chlorophyll *a*
+# Re-thinking the Lake Trophic State Index
+
+.left-column[
+- Hierarchical model
+  - Nitrogen and Phosphorus
+  - POLR: Revised Trophic State Index
+- Total Accuracy 
+  - 0.6
+- Balanced Accuracy
+  - 0.68 to 0.78
+]
+
+.right-column[
+![models](figure/dag-0.jpg)
+]
 
 ---
 
-# Heirarchical models of trophic State and chlorophyll *a*
+# Re-thinking the Lake Trophic State Index
+
+.left-column[
+- Hierarchical model
+  - Nitrogen and Phosphorus
+  - POLR: Revised Trophic State Index
+- Total Accuracy 
+  - 0.6
+- Balanced Accuracy
+  - 0.68 to 0.78
+]
+
+.right-column[
+![models](figure/predcit_acc-0.jpg)
+]
+
+---
+
+# Re-thinking the Lake Trophic State Index
 
 - How is it open and reproducible?
-    - [GitHub]()
-    - [Zenodo]()
+    - [GitHub](https://github.com/usepa/rethinking_tsi)
+    - [10.5281/zenodo.556175](https://doi.org/10.5281/zenodo.556175)
     - OA (when published)
 ---
 
