@@ -33,13 +33,13 @@ data(pt_df)
 ### hashtag: \#AAG2017 
 ### me: @jhollist
 
-<!--#########################################################################-->
+
 ---
 class: center, middle, inverse
 
 # Who, what, why, and how?
 
-<!--#########################################################################-->
+
 ---
 
 # Who are we?
@@ -61,7 +61,7 @@ class: center, middle, inverse
 <img src="figure/comp_eco_crew.jpg" style="margin-left: 75px"></img>
 ]
 
-<!--#########################################################################-->
+
 ---
 
 # What do we do? 
@@ -74,7 +74,7 @@ class: center, middle, inverse
 ![The workflow](figure/cyano_model_function.jpg)
 
 
-<!--#########################################################################-->
+
 ---
 
 # What is open science? 
@@ -86,7 +86,7 @@ class: center, middle, inverse
 
 <img src="figure/open_sign_4344960203_821cb56ec9_o_resize.jpg" style="height: 80%; width: 80%; margin-left: 100px"></img>
 
-<!--#########################################################################-->
+
 ---
 
 # Why open science?
@@ -103,7 +103,7 @@ class: center, middle, inverse
 
 <img src="https://media.giphy.com/media/1M9fmo1WAFVK0/giphy.gif" style="width: 50%; height: 50%; margin-left: 33%;"></img>
 
-<!--#########################################################################-->
+
 ---
 
 # How are we open?
@@ -277,7 +277,7 @@ class: middle, center, inverse
 
 # Data Visualization
 
-<!--#########################################################################-->
+
 ---
 
 # Shiny: Cyanobacteria Monitoring Collaborative
@@ -298,7 +298,7 @@ class: middle, center, inverse
 ![cyano web](figure/cyano_web.jpg)
 ]
 
-<!--#########################################################################-->
+
 ---
 class: middle, center
 background-image: url("figure/shiny.jpg")
@@ -306,13 +306,13 @@ background-image: url("figure/shiny.jpg")
 # [Shiny: Demo](https://cyanos.shinyapps.io/cyanoviz/)
 
 
-<!--#########################################################################-->
+
 ---
 class: middle, center, inverse
 
 #  Sharing and Collaborating
 
-<!--#########################################################################-->
+
 ---
 
 # GitHub
@@ -323,20 +323,20 @@ class: middle, center, inverse
 
 <img src = "http://www.storybench.org/wp-content/uploads/2015/09/github-octocat.jpg" style="margin-left: 5%; margin-top: -20px; width: 700px;"></img>
 
-<!--#########################################################################-->
+
 ---
 class: middle, center
 background-image: url("figure/github_demo.jpg")
 
 # [GitHub: Demo](https://github.com/usepa)
 
-<!--#########################################################################-->
+
 ---
 class: middle, center, inverse
 
 #  Open Access
 
-<!--#########################################################################-->
+
 ---
 
 # Publishing
@@ -352,25 +352,42 @@ class: middle, center, inverse
 <img src = "figure/oa_journals.jpg" style="margin-left: 15%; width: 500px;"></img>
 
 
-<!--#########################################################################-->
+
 ---
 class: middle, center, inverse
 
 #  Research efforts
 
-<!--#########################################################################-->
+
 ---
 
 # Models and field research
 
-- Trophic state and chlorophyl
+- Trophic state and chlorophyll **a**
     - Random forest
     - Heirarchical Bayes
 - Phytoplankton community models
-- Lake photic zone temperature
 - Temporal and spatial dynamics of cyanobacteria blooms
+- Lake photic zone temperature
 
 <img src="https://media.giphy.com/media/qJsJI0MhazjGw/giphy.gif" style="width: 80%; height: 80%; margin-left: 10%;"></img>
+
+---
+
+# Random forest models of trophic State and chlorophyll **a**
+
+.left-column[
+- National 
+- Uses National Lakes Assessment Data and Landcover
+- `randomForest` package
+- Rolled-own variable selection
+- All variables (water quality and GIS): 68.7% Total Accuracy
+- GIS only variables: 49% Total Accuracy
+- But ...]
+
+.right-column[
+![probmap](figure/prob_map_ecosphere.jpg)
+]
 
 
 # Thanks!
