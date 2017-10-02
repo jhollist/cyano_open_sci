@@ -380,15 +380,19 @@ class: middle, center, inverse
 
 .left-column[
 - National 
-- Uses National Lakes Assessment Data and Landcover
+- Data
+    - National Lakes Assessment
+    - Landcover
 - `randomForest` package
-- Rolled-own variable selection
-- All variables (water quality and GIS): 68.7% Total Accuracy
-- GIS only variables: 49% Total Accuracy
+- Variable selection
+- All variables (water quality and GIS) 
+    - 68.7% Total Accuracy
+- GIS only variables 
+    - 49% Total Accuracy
 - But ...]
 
 .right-column[
-![probmap](figure/prob_map_ecosphere.jpg)
+<img src="figure/prob_map_ecosphere.jpg", style="width: 110%; height: 110%; margin-top: 50px;"></img>
 ]
 
 ---
