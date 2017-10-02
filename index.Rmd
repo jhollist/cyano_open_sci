@@ -356,10 +356,21 @@ class: middle, center, inverse
 ---
 class: middle, center, inverse
 
-#  Modelling
+#  Research efforts
 
 <!--#########################################################################-->
 ---
+
+# Models and field research
+
+- Trophic state and chlorophyl
+    - Random forest
+    - Heirarchical Bayes
+- Phytoplankton community models
+- Lake photic zone temperature
+- Temporal and spatial dynamics of cyanobacteria blooms
+
+<img src="https://media.giphy.com/media/qJsJI0MhazjGw/giphy.gif" style="width: 80%; height: 80%; margin-left: 10%;"></img>
 
 
 # Thanks!
