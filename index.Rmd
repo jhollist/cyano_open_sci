@@ -368,15 +368,17 @@ class: middle, center, inverse
 - Trophic state and chlorophyll **a**
     - Random forest
     - Heirarchical Bayes
-- Phytoplankton community models
+- Chlorophyll *a* and microcystin
 - Temporal and spatial dynamics of cyanobacteria blooms
-- Lake photic zone temperature
+- New work
+    - Lake photic zone temperature
+    - Phytoplankton community analysis
 
 <img src="https://media.giphy.com/media/qJsJI0MhazjGw/giphy.gif" style="width: 80%; height: 80%; margin-left: 10%;"></img>
 
 ---
 
-# Random forest models of trophic State and chlorophyll **a**
+# Random forest models of trophic State and chlorophyll *a*
 
 .left-column[
 - National 
@@ -392,18 +394,57 @@ class: middle, center, inverse
 - But ...]
 
 .right-column[
-<img src="figure/prob_map_ecosphere.jpg", style="width: 110%; height: 110%; margin-top: 50px;"></img>
+<img src="figure/prob_map_ecosphere.jpg", style="width: 120%; margin-top: 50px;"></img>
 ]
 
 ---
 
-# Random forest models of trophic State and chlorophyll **a**
+# Random forest models of trophic State and chlorophyll *a*
+
+- How is it open and reproducible?
+    - [GitHub](https://github.com/usepa/LakeTrophicModelling)
+    - [10.5281/zenodo.40271](http://dx.doi.org/10.5281/zenodo.40271)
+    - [PeerJ Pre-print](https://peerj.com/preprints/1319/)
+    - [Ecosphere (OA)](http://onlinelibrary.wiley.com/doi/10.1002/ecs2.1321/full)
+
+---
+
+# Heirarchical models of trophic State and chlorophyll *a*
+
+---
+
+# Heirarchical models of trophic State and chlorophyll *a*
 
 - How is it open and reproducible?
     - [GitHub]()
     - [Zenodo]()
-    - [Pre-print]()
-    - [Open Access]()
+    - OA (when published)
+---
+
+# Chlorophyll *a* and microcystin
+
+---
+
+# Chlorophyll *a* and microcystin
+
+- How is it open?
+
+---
+
+# Temporal and spatial dynamics of cyanobacteria blooms
+
+---
+
+# Temporal and spatial dynamics of cyanobacteria blooms
+
+- How is it open?
+
+---
+
+# New work
+
+- Lake photic zone temperature
+- Phytoplankton community analysis
 
 ---
 
