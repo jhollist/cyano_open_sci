@@ -12,9 +12,9 @@
 class: center, middle, inverse, title-slide
 
 # An Open Science Framework for Research on Cyanobacteria in Lakes and Ponds
+## US EPA, Region 7
 ### Jeff Hollister, Farnaz Nojavan, Betty Kreakie, Stephen Shivers, and Bryan Milstead
-### <div style="white-space: pre-line;">US EPA, Region 7
-2017-10-11
+### <div style="white-space: pre-line;">2017-10-11
 Lenexa, KS</div>
 
 ---
@@ -118,13 +118,67 @@ class: center, middle, inverse
 &lt;img src = "https://media.giphy.com/media/l0MYyv6UK0Bd4DE76/giphy.gif" style="width: 110%; height: 110%; margin-top: 50px;"&gt;&lt;/img&gt;
 ]
 
-&lt;!--#########################################################################--&gt;
 ---
-class: middle, center, inverse
+class: center, middle, inverse
 
-# R package development
+# Packages
 
-&lt;!--#########################################################################--&gt;
+---
+
+# Why Packages
+
+- Useful structure
+- Infrastrcutre for sharing
+  - GitHub
+  - CRAN
+- We are an R shop!
+
+&lt;img src="https://media.giphy.com/media/l2JhtKtDWYNKdRpoA/giphy.gif" style="width: 80%; height: 80%; margin-left: 10%;"&gt;&lt;/img&gt;
+
+---
+# Research Compendia
+
+.left-column[
+- Define
+- Origins
+  - [Gentleman and Lang (2004)](http://biostats.bepress.com/bioconductor/paper2)
+- Part of
+  - Reproducible Research
+  - Literate Programming (ala Donald Knuth)
+- ROpenSci efforts
+  - [rrrpkg](https://github.com/ropensci/rrrpkg)
+  - [ROpenSci unconf 2017 discussion](https://github.com/ropensci/unconf17/issues/5)
+]
+
+.right-column[
+
+&lt;img src="http://www.dlib.org/dlib/january17/nuest/nuest-fig1.png" style="margin-left: 75px"&gt;&lt;/img&gt;
+
+from Nüst, Konkol, et al (2017), https://doi.org/10.1045/january2017-nuest
+]
+
+---
+
+# Packages as Research Compendia
+- R, Data, and Vignettes folders
+- Other examples  
+    - [Carl Boettiger's template](https://github.com/cboettig/template)
+    - [Ben Marwick](https://github.com/benmarwick/Pleistocene-aged-stone-artefacts-from-Jerimalai--East-Timor)
+- Our examples
+    - https://github.com/usepa/LakeTrophicModelling
+    - https://github.com/usepa/Microcystinchla)
+- GitHub and Zenodo (Archive)
+
+![ghz](ghz.jpg)
+
+---
+
+# Packages to solve common problems
+  - `lakemorpho`
+  - `elevatr`
+  - `lakescape` (in development)
+  
+&lt;img src="https://media3.giphy.com/media/ID4NXWnwuLnLq/200.webp#0-grid1" style="width: 80%; height: 80%; margin-left: 10%;"&gt;&lt;/img&gt;
 ---
 
 # `lakemorpho`
@@ -137,9 +191,11 @@ class: middle, center, inverse
   - August 2014
 - Version 1.1.0 
   - December 2016
+- `sf` support to be added
 - [National Lake Morphometry](https://edg.epa.gov/metadata/catalog/search/resource/details.page?uuid=%7B495CBAED-9BB9-49B4-80A7-1C91DE5FCA95%7D)
 - [Hollister and Milstead (2010)](http://dx.doi.org/10.1080/07438141.2010.504321)
 - [Hollister *et. al.* (2011)](http://dx.doi.org/10.1371/journal.pone.0025764)
+- [Hollister and Stachelek (To Be Submitted)](https://github.com/usepa/lakemorpho_manuscript)
 ]
 
 .right-column[
@@ -147,16 +203,17 @@ class: middle, center, inverse
 ]
 
 
-&lt;!--#########################################################################--&gt;
+
 ---
 class: center, middle
 background-image: url('figure/lakemorpho_demo.png')
 background-position: 50% 50%
 
-# [lakemorpho: Demo](http://server.jwhollister.com:8787)
+# lakemorpho::demo
+
+&lt;!-- # [lakemorpho: Demo](http://server.jwhollister.com:8787) --&gt;
 
 
-&lt;!--#########################################################################--&gt;
 ---
 
 # `elevatr`
@@ -173,22 +230,39 @@ background-position: 50% 50%
 - Version 0.1.3 
   - March 2017
 - Will be paired with `lakemorpho`
+- `sf` support to be added
 ]
 
 .right-column[
 ![](index_files/figure-html/unnamed-chunk-2-1.png)&lt;!-- --&gt;
 ]
 
-&lt;!--#########################################################################--&gt;
+
 ---
 class: center, middle
 background-image: url('figure/elevatr_demo.png')
 background-position: 50% 50%
 
-# [elevatr: Demo](http://server.jwhollister.com:8787)
+# elevatr::demo
 
-&lt;!--#########################################################################--&gt;
+&lt;!-- # [elevatr: Demo](http://server.jwhollister.com:8787) --&gt;
+
 ---
+
+# `goatscape`
+
+- New effort with Bryan Milstead
+- What's in a name?
+- Summarizes ancillary data for a user-define landscape polygon
+  - Census (via `censusapi`)
+  - Landscover
+  - Impervious
+- Accepts arbitrary spatial data for the landscape
+- Based on `sf` and tidy by design
+- &lt;https://github.com/usepa/goatscape&gt;
+
+---
+
 class: middle, center, inverse
 
 # Data Visualization
@@ -270,6 +344,13 @@ class: middle, center, inverse
 
 &lt;!--#########################################################################--&gt;
 ---
+class: middle, center, inverse
+
+#  Modelling
+
+&lt;!--#########################################################################--&gt;
+---
+
 
 # Thanks!
 .center[
