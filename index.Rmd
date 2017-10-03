@@ -102,7 +102,7 @@ class: center, middle, inverse
 - Benefits to society
   - ["Sharing of Data Leads to Progress on Alzheimer’s"](http://www.nytimes.com/2010/08/13/health/research/13alzheimer.html)
 
-<img src="https://media.giphy.com/media/1M9fmo1WAFVK0/giphy.gif" style="width: 80%; height: 80%; margin-left: 20%;"></img>
+<img src="https://media.giphy.com/media/1M9fmo1WAFVK0/giphy.gif" style="width: 60%; height: 60%; margin-left: 20%;"></img>
 
 
 ---
@@ -448,7 +448,7 @@ class: middle, center, inverse
     - [10.5281/zenodo.556175](https://doi.org/10.5281/zenodo.556175)
     - OA (when published)
   
-<img src="https://www.elsevier.com/__data/cover_img/503306.gif" style="width: 90%; height: 90%;"></img>
+<img src="https://www.elsevier.com/__data/cover_img/503306.gif" style="width: 60%; height: 60%;"></img>
 ---
 
 # Chlorophyll *a* and microcystin
@@ -471,7 +471,7 @@ class: middle, center, inverse
 
 - The numbers!
 
-|Cond. Probability|USEPA Child (0.3 µg/L)|WHO Drink (1 µg/L)|USEPA Adult (1.6 µg/L)|WHO Rec. (2 µg/L)|
+|Cond.\n Probability|USEPA Child\n(0.3 µg/L)|WHO Drink\n(1 µg/L)|USEPA Adult\n(1.6 µg/L)|WHO Rec.\n(2 µg/L)|
 |-----------------|----------------------|-----------------|----------------------|------------------|
 |0.1	            |0.07         	       |0.07             |0.07	                |1                 |
 |0.2	            |0.07         	       |4         	     |12	                  |17                |
@@ -549,7 +549,7 @@ need maps
 - Lake photic zone temperature
 - Phytoplankton community analysis
 
-<img src="figure/lila1.jpg" style="width: 110%; height: 110%; margin-left: 10%;"></img>
+<img src="figure/Lila1.jpg" style="width: 110%; height: 110%; margin-left: 10%;"></img>
 
 ---
 
