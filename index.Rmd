@@ -110,11 +110,12 @@ class: center, middle, inverse
 # How are we open?
 
 .left-column[
+
 - R package development
 - Visualization
 - Sharing and collaborating
 - Publishing
-- Open data (not in this talk)
+- Apply to our research efforts 
 ]
 
 .right-column[
