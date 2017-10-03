@@ -180,7 +180,7 @@ from Nüst, Konkol, et al (2017), https://doi.org/10.1045/january2017-nuest
 # Packages to solve common problems
   - `lakemorpho`
   - `elevatr`
-  - `lakescape` (in development)
+  - `goatscape` (in development)
   
 <img src="https://media3.giphy.com/media/ID4NXWnwuLnLq/200.webp#0-grid1" style="width: 80%; height: 80%; margin-left: 10%;"></img>
 ---
@@ -199,7 +199,7 @@ from Nüst, Konkol, et al (2017), https://doi.org/10.1045/january2017-nuest
 - [National Lake Morphometry](https://edg.epa.gov/metadata/catalog/search/resource/details.page?uuid=%7B495CBAED-9BB9-49B4-80A7-1C91DE5FCA95%7D)
 - [Hollister and Milstead (2010)](http://dx.doi.org/10.1080/07438141.2010.504321)
 - [Hollister *et. al.* (2011)](http://dx.doi.org/10.1371/journal.pone.0025764)
-- [Hollister and Stachelek (To Be Submitted)](https://github.com/usepa/lakemorpho_manuscript)
+- [Hollister and Stachelek (2017)](https://f1000research.com/articles/6-1718/v1)
 ]
 
 .right-column[
