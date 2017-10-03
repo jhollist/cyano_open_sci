@@ -448,7 +448,7 @@ class: middle, center, inverse
     - [10.5281/zenodo.556175](https://doi.org/10.5281/zenodo.556175)
     - OA (when published)
   
-<img src="https://www.elsevier.com/__data/cover_img/503306.gif" style="width: 60%; height: 60%;"></img>
+![ecol_model](figure/ecol_model.jpg)
 ---
 
 # Chlorophyll *a* and microcystin
@@ -471,17 +471,7 @@ class: middle, center, inverse
 
 - The numbers!
 
-|Cond.\n Probability|USEPA Child\n(0.3 µg/L)|WHO Drink\n(1 µg/L)|USEPA Adult\n(1.6 µg/L)|WHO Rec.\n(2 µg/L)|
-|-----------------|----------------------|-----------------|----------------------|------------------|
-|0.1	            |0.07         	       |0.07             |0.07	                |1                 |
-|0.2	            |0.07         	       |4         	     |12	                  |17                |
-|0.3	            |3	         	         |17         	     |32	                  |45                |
-|0.4	            |11	         	         |37         	     |68	                  |77                |
-|0.5	            |23	         	         |68         	     |84	                  |104               |
-|0.6	            |39	         	         |97         	     |115	                  |185               |
-|0.7	            |66	         	         |126         	   |871	                  |871               |
-|0.8	            |116	         	       |271         	   |871	                  |871               |
-|0.9	            |170	         	       |516         	   |871	                  |871               |
+![mcyst_table](figure/mcys_table.jpg)
 
 ---
 
@@ -545,11 +535,11 @@ need maps
 
 # New work
 
-- Heirarchical bayes models of microcystin
+- Heirarchical Bayes models of microcystin
 - Lake photic zone temperature
 - Phytoplankton community analysis
 
-<img src="figure/Lila1.jpg" style="width: 50%; height: 50%;"></img>
+<img src="figure/Lila1.jpg" style="width: 40%; height: 40%; margin-left:30%"></img>
 
 ---
 
