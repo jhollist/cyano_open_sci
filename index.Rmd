@@ -20,11 +20,11 @@ class: center, middle, inverse
 
 ```{r setup, include=FALSE, message=FALSE}
 options(htmltools.dir.version = FALSE)
-library(mapview)
-library(lakemorpho)
-library(elevatr)
-data(lake)
-data(pt_df)
+#library(mapview)
+#library(lakemorpho)
+#library(elevatr)
+#data(lake)
+#data(pt_df)
 ```
 
 # Twitter?
@@ -203,12 +203,7 @@ from Nüst, Konkol, et al (2017), https://doi.org/10.1045/january2017-nuest
 ]
 
 .right-column[
-```{r, echo=FALSE, message = FALSE}
-set.seed(1)
-library(lakemorpho)
-data(lakes)
-plot(inputLM)
-```
+![lakemorpho](figure/lakemorpho.png)
 ]
 
 
@@ -243,10 +238,7 @@ background-position: 50% 50%
 ]
 
 .right-column[
-```{r, echo=FALSE, message = FALSE, cache = TRUE}
-set.seed(1)
-raster::plot(get_elev_raster(lake,z = 12))
-```
+![elevatr](figure/elevatr.png)
 ]
 
 
@@ -263,6 +255,7 @@ background-position: 50% 50%
 
 # `goatscape`
 
+.left-column[
 - New effort with Bryan Milstead
 - What's in a name?
 - Summarizes ancillary data for a user-define landscape polygon
@@ -272,7 +265,11 @@ background-position: 50% 50%
 - Accepts arbitrary spatial data for the landscape
 - Based on `sf` and tidy by design
 - <https://github.com/usepa/goatscape>
+]
 
+.right-column[
+<img src="figure/goatscape-logo.jpg" style="width: 120%; height: 120%; margin-top: 50px"></img>
+]
 ---
 
 class: middle, center, inverse
@@ -421,7 +418,7 @@ class: middle, center, inverse
 ]
 
 .right-column[
-![models](figure/dag-0.jpg)
+<img src="figure/dag-0.jpg" style="width: 120%; height: 120%; margin-top: 50px"></img>
 ]
 
 ---
