@@ -268,7 +268,7 @@ background-position: 50% 50%
 ]
 
 .right-column[
-<img src="figure/goatscape-logo.jpg" style="width: 120%; height: 120%; margin-top: 50px"></img>
+<img src="figure/goatscape_logo.jpg" style="width: 120%; height: 120%; margin-top: 50px"></img>
 ]
 ---
 
