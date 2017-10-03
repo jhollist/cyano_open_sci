@@ -69,7 +69,6 @@ class: center, middle, inverse
 # What do we do? 
 
 - Apply computational approaches to understand water quality impacts in lakes
-  - Modelling (Not this talk!, but see Farnaz's talk)
 - Open Science
 
 
@@ -103,7 +102,7 @@ class: center, middle, inverse
 - Benefits to society
   - ["Sharing of Data Leads to Progress on Alzheimer’s"](http://www.nytimes.com/2010/08/13/health/research/13alzheimer.html)
 
-<img src="https://media.giphy.com/media/1M9fmo1WAFVK0/giphy.gif" style="width: 50%; height: 50%; margin-left: 33%;"></img>
+<img src="https://media.giphy.com/media/1M9fmo1WAFVK0/giphy.gif" style="width: 80%; height: 80%; margin-left: 20%;"></img>
 
 
 ---
@@ -268,7 +267,7 @@ background-position: 50% 50%
 ]
 
 .right-column[
-<img src="figure/goatscape_logo.jpg" style="width: 100%; height: 100%; margin-top: 25px"></img>
+<img src="figure/goatscape_logo.jpg" style="width: 90%; height: 90%;"></img>
 ]
 ---
 
@@ -389,7 +388,7 @@ class: middle, center, inverse
 - But ...]
 
 .right-column[
-<img src="figure/prob_map_ecosphere.jpg" style="width: 120%; height: 120%; margin-top: 50px;"></img>
+<img src="figure/hollisterES15-00703R_fig11.jpg" style="width: 100%; height: 100%; margin-top: 50px;"></img>
 ]
 
 ---
@@ -419,7 +418,7 @@ class: middle, center, inverse
 ]
 
 .right-column[
-<img src="figure/dag-0.jpg" style="width: 120%; height: 120%; margin-top: 50px"></img>
+<img src="figure/dag-0.jpg" style="width: 150%; height: 150%; margin-top: 50px"></img>
 ]
 
 ---
@@ -449,7 +448,7 @@ class: middle, center, inverse
     - [10.5281/zenodo.556175](https://doi.org/10.5281/zenodo.556175)
     - OA (when published)
   
-<img src="https://www.elsevier.com/__data/cover_img/503306.gif" style="width: 120%; height: 120%;"></img>
+<img src="https://www.elsevier.com/__data/cover_img/503306.gif" style="width: 90%; height: 90%;"></img>
 ---
 
 # Chlorophyll *a* and microcystin
