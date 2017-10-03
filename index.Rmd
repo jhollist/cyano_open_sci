@@ -501,7 +501,7 @@ class: middle, center, inverse
 - Twice weekly
 - Seven sampling locations in each
 
-need maps
+![yawg_warw](figure/yawg_warw.png)
 
 ---
 
