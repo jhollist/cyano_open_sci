@@ -501,7 +501,7 @@ class: middle, center, inverse
 - Twice weekly
 - Seven sampling locations in each
 
-<img src="figure/yawg_warw.png" style="width: 75%; height: 75%;"></img>
+<img src="figure/yawg_warw.png" style="width: 83%; margin-top: -2%; margin-left: 10%;"></img>
 
 ---
 
