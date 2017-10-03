@@ -549,7 +549,7 @@ need maps
 - Lake photic zone temperature
 - Phytoplankton community analysis
 
-<img src="figure/Lila1.jpg" style="width: 110%; height: 110%; margin-left: 10%;"></img>
+<img src="figure/Lila1.jpg" style="width: 50%; height: 50%;"></img>
 
 ---
 
