@@ -32,7 +32,7 @@ options(htmltools.dir.version = FALSE)
 
 ![Yes!!!](http://www.reactiongifs.us/wp-content/uploads/2014/11/thumbs_up_waynes_world.gif)
 
-### hashtag: \#AAG2017 
+### hashtag: \#cyanobacteria
 ### me: @jhollist
 
 
